@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void showLargeAdBeforeLoadingActivity(final Intent intent) {
-        if (interstitial.isLoaded()) {
+        if (interstitial != null) {
             interstitial.show();
             interstitial.setAdListener(new AdListener() {
                 @Override
